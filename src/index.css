@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  :root {
+    --clr-red-primary: 0, 100%, 74%;
+    --clr-green-primary: 154, 59%, 51%;
+
+    --clr-blue-accent: 248, 32%, 49%;
+
+    --clr-dark-neutral: 249, 10%, 26%;
+    --clr-light-neutral: 246, 25%, 77%;
+  }
+
+}
+
+@layer components {
+  body {
+    background-image: url("./assets/images/bg-intro-mobile.png");
+
+    @media screen and (min-width: 768px) {
+      background-image: url("./assets/images/bg-intro-desktop.png");
+
+    }
+  }
+}
